@@ -20,5 +20,6 @@ module.exports = {
     "Prison",
     "Farmland",
     "Easter Egg: Just insta drop",
+    "Train"
   ],
 };
