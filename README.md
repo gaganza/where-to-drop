@@ -6,26 +6,30 @@ Simple script that runs on `!ping` or `!p` command that randomly selects a locat
 
 ## List of Available Drop Locations
 
+- Airport
+- Array
+- Boneyard
 - Downtown
-- Park
-- Hospital
-- TV Station
-- Dam
-- Military Base
-- Quarry
-- Lumber
-- Stadium
-- Port
+- Easter Egg: Just insta drop
+- Factory
+- Farmland
 - Hills
+- Hospital
+- Lumber
+- Military Base
+- Park
+- Port
+- Prison
 - Promenade East
 - Promenade West
-- Airport
-- Boneyard
-- Superstore
+- Quarry
+- Salt Mine
+- Stadium
 - Storage Town
-- Prison
-- Farmland
-- Easter Egg: Just insta drop
+- Summit
+- Superstore
+- TV Station
+- Train Station
 
 ## Download
 
