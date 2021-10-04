@@ -22,7 +22,6 @@ Simple script that runs on `!ping` or `!p` command that randomly selects a locat
 - Prison
 - Promenade East
 - Promenade West
-- Quarry
 - Salt Mine
 - Stadium
 - Storage Town
