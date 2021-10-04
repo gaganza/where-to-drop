@@ -16,7 +16,6 @@ module.exports = {
     'Prison',
     'Promenade East',
     'Promenade West',
-    'Quarry',
     'Salt Mine',
     'Stadium',
     'Storage Town',
