@@ -17,6 +17,10 @@ function getRandomLocation() {
   return LOCATIONS[randomInteger(0, LOCATIONS.length - 1)];
 }
 
+function getAllLocations() {
+  return Object.values(LOCATIONS);
+}
+
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
 });
@@ -31,6 +35,9 @@ client.on('message', (message) => {
       case 'p':
       case 'ping':
         message.reply(getRandomLocation());
+      case 'l':
+      case 'list':
+        message.reply(getAllLocations().join(', '));
     }
   }
 });
