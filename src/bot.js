@@ -35,9 +35,13 @@ client.on('message', (message) => {
       case 'p':
       case 'ping':
         message.reply(getRandomLocation());
+
+        break;
       case 'l':
       case 'list':
         message.reply(getAllLocations().join(', '));
+        
+        break;
     }
   }
 });
