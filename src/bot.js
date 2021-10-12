@@ -53,5 +53,4 @@ client.on('message', (message) => {
     }
   }
 });
-
 client.login(auth.token);
