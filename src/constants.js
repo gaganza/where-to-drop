@@ -24,4 +24,17 @@ module.exports = {
     'TV Station',
     'Train Station',
   ],
+  REBIRTHLOCATIONS: [
+    'Bioweapons Labs',
+    'Chemical Engineering',
+    'Constructions Site',
+    'Factory ',
+    'Decon Zone',
+    'Habour',
+    'Headquarters',
+    'Living Quarters',
+    'Prison Block',
+    'Security Area',
+    'Shore',
+  ],
 };

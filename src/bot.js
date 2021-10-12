@@ -16,6 +16,9 @@ function randomInteger(min, max) {
 function getRandomLocation() {
   return LOCATIONS[randomInteger(0, LOCATIONS.length - 1)];
 }
+function getRandomRebirhtLocation() {
+  return LOCATIONS[randomInteger(0, REBIRTHLOCATIONS.length - 1)];
+}
 
 function getAllLocations() {
   return Object.values(LOCATIONS);
@@ -40,7 +43,12 @@ client.on('message', (message) => {
       case 'l':
       case 'list':
         message.reply(getAllLocations().join(', '));
-        
+
+        break;
+
+      case 'r':
+      case 'rebirth':
+        message.reply(getRandomRebirhtLocation());
         break;
     }
   }
