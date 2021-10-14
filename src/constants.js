@@ -52,7 +52,7 @@ module.exports = {
     'Security Area',
     'Shore',
     '     ',
-    'VERDANSK',
+    'VERDANSK LOCATIONS: ',
     'Airport',
     'Array',
     'Boneyard',
