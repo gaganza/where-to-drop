@@ -13,11 +13,11 @@ function randomInteger(min, max) {
   return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
-function getRandomLocation() {
-  return LOCATIONS[randomInteger(0, LOCATIONS.length - 1)];
+function getRandomVerdanskLocation() {
+  return VERDANSK_LOCATIONS[randomInteger(0, LOCATIONS.length - 1)];
 }
 function getRandomRebirhtLocation() {
-  return LOCATIONS[randomInteger(0, REBIRTHLOCATIONS.length - 1)];
+  return REBIRTH_LOCATIONS[randomInteger(0, REBIRTHLOCATIONS.length - 1)];
 }
 
 function getAllLocations() {
@@ -37,7 +37,7 @@ client.on('message', (message) => {
     switch (cmd) {
       case 'p':
       case 'ping':
-        message.reply(getRandomLocation());
+        message.reply(getRandomVerdanskLocation());
 
         break;
       case 'l':
@@ -49,6 +49,7 @@ client.on('message', (message) => {
       case 'r':
       case 'rebirth':
         message.reply(getRandomRebirhtLocation());
+
         break;
     }
   }
