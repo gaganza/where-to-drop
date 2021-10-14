@@ -24,6 +24,10 @@ function getAllLocations() {
   return Object.values(LOCATIONS);
 }
 
+function getListOfCommands() {
+  return Object.values(HELP);
+}
+
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
 });
@@ -40,6 +44,7 @@ client.on('message', (message) => {
         message.reply(getRandomVerdanskLocation());
 
         break;
+
       case 'l':
       case 'list':
         message.reply(getAllLocations().join(', '));
@@ -51,6 +56,10 @@ client.on('message', (message) => {
         message.reply(getRandomRebirhtLocation());
 
         break;
+
+      case 'h':
+      case 'help':
+        message.reply(getListOfCommands());
     }
   }
 });

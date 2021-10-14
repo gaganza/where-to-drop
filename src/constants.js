@@ -37,4 +37,12 @@ module.exports = {
     'Security Area',
     'Shore',
   ],
+  HELP: [
+    'usage: ![OPTION]',
+    'p, ping:         ping for a location in the Verdansk map',
+
+    'r, rebirt:       pring for a location in the Rebirth Island map',
+
+    'l, list:         list out all the locations for all maps',
+  ],
 };
