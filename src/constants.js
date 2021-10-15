@@ -1,5 +1,5 @@
 module.exports = {
-  LOCATIONS: [
+  VERDANSK_LOCATIONS: [
     'Airport',
     'Array',
     'Boneyard',
@@ -23,5 +23,18 @@ module.exports = {
     'Superstore',
     'TV Station',
     'Train Station',
+  ],
+  REBIRTH_ISLAND_LOCATIONS: [
+    'Bioweapon labs',
+    'Chemical Eng',
+    'Construction Site',
+    'Decon Zone',
+    'Factory',
+    'Harbor',
+    'Headquraters',
+    'Living Quarters',
+    'Prison Block',
+    'Security Area',
+    'Shore',
   ],
 };
