@@ -27,11 +27,11 @@ module.exports = {
   REBIRTH_ISLAND_LOCATIONS: [
     'Bioweapon labs',
     'Chemical Eng',
-    'Construction Site',
+    'Control Zone',
     'Decon Zone',
     'Factory',
     'Harbor',
-    'Headquraters',
+    'Headquarters',
     'Living Quarters',
     'Prison Block',
     'Security Area',
