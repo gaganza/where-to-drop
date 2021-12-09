@@ -1,6 +1,6 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
-const { VERDANSK_LOCATIONS, REBIRTH_ISLAND_LOCATIONS } = require('./constants');
+const { CALDERA_LOCATIONS, REBIRTH_ISLAND_LOCATIONS } = require('./constants');
 
 let auth;
 
@@ -25,7 +25,7 @@ function getAllLocations(map) {
 function getHelpMessage() {
   return `
     usage: ![OPTION]
-      p, ping:\t\t\t ping for a location in the Verdansk map
+      p, ping:\t\t\t ping for a location in the Caldera map
 
       r, rebirth:\t\t\t pring for a location in the Rebirth Island map
 
@@ -48,7 +48,7 @@ client.on('message', (message) => {
     switch (cmd) {
       case 'p':
       case 'ping':
-        message.reply(getRandomLocation(VERDANSK_LOCATIONS));
+        message.reply(getRandomLocation(CALDERA_LOCATIONS));
         break;
 
       case 'r':
@@ -58,12 +58,12 @@ client.on('message', (message) => {
 
       case 'l':
       case 'list':
-        const verdanskLocations = getAllLocations(VERDANSK_LOCATIONS).join(', ');
+        const calderaLocations = getAllLocations(CALDERA_LOCATIONS).join(', ');
         const rebirthLocations = getAllLocations(REBIRTH_ISLAND_LOCATIONS).join(', ');
 
         message.reply(
           `
-          Verdansk locations: ${verdanskLocations}
+          Caldera locations: ${calderaLocations}
           Rebirth Island locations: ${rebirthLocations}
           `,
         );
