@@ -19,8 +19,9 @@ module.exports = {
   REBIRTH_ISLAND_LOCATIONS: [
     'Bioweapon labs',
     'Chemical Eng',
-    'Control Zone',
+    'Control Center',
     'Decon Zone',
+    'Easter Egg: Just insta drop',
     'Harbor',
     'Headquarters',
     'Living Quarters',
