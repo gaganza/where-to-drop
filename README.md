@@ -12,25 +12,38 @@ VERDANSK
 - Array
 - Boneyard
 - Downtown
+Simple script that runs on `!ping` or `!p` command that randomly selects a location to drop in Call of Duty - Warzone. Now supports `!r` or `!rebirth` to select a location from Rebirth Island.
+
+## List of Available Drop Locations (Verdansk)
+- Airfield
+- Arsenal
+- Beachhead
+- Capital
+- Docks
 - Easter Egg: Just insta drop
+- Fields
+- Lagoon
+- Mines
+- Peak
+- Power plant
+- Resort
+- Runway
+- Sub pen
+- Village
+
+## List of Available Drop Locations (Rebirth Island)
+
+- Bioweapon labs
+- Chemical Eng
+- Construction Site
+- Decon Zone
+- Docks
 - Factory
-- Farmland
-- Hills
-- Hospital
-- Lumber
-- Military Base
-- Park
-- Port
-- Prison
-- Promenade East
-- Promenade West
-- Salt Mine
-- Stadium
-- Storage Town
-- Summit
-- Superstore
-- TV Station
-- Train Station
+- Harbor
+- Headquraters
+- Living Quarters
+- Prison Block
+- Stronghold
 
 REBIRTH ISLAND
 
@@ -38,13 +51,13 @@ REBIRTH ISLAND
 - Chemical Engineering
 - Constructions Site
 - Decon Zone
+- Docks
 - Factory
 - Habour
 - Headquarters
 - Living Quarters
 - Prison Block
-- Security Area
-- Shore
+- Stronghold
 
 ## Download
 
