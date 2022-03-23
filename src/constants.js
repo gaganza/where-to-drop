@@ -21,6 +21,7 @@ module.exports = {
     'Chemical Eng',
     'Control Center',
     'Decon Zone',
+    'Dock', 
     'Easter Egg: Just insta drop',
     'Harbor',
     'Headquarters',
@@ -29,5 +30,6 @@ module.exports = {
     'Prison Block',
     'Security Area',
     'Shore',
+    'Stronghold',
   ],
 };
