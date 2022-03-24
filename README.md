@@ -27,13 +27,13 @@ Simple script that runs on `!ping` or `!p` command that randomly selects a locat
 - Chemical Eng
 - Construction Site
 - Decon Zone
+- Dock
 - Factory
 - Harbor
 - Headquraters
 - Living Quarters
 - Prison Block
-- Security Area
-- Shore
+- Stronghold
 
 ## Download
 
