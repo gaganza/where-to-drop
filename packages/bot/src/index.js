@@ -42,6 +42,10 @@ client.on('ready', () => {
 });
 
 client.on('message', (message) => {
+  if (message.content.substring(0, 1) == '!') {
+    message.reply(getHelpMessage());
+  }
+
   if (message.mentions.has(client.user.id)) {
     const [_mention, cmd] = message.content.split(' ');
 
