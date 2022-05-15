@@ -1,15 +1,10 @@
 {
-  "name": "where-to-drop--bot",
-  "version": "1.0.0",
-  "description": "Discord bot to randomly select a drop location for Warzone",
-  "main": "bot.js",
-  "author": "Gaston Aganza",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
   "scripts": {
-    "start": "node src/bot.js"
-  },
-  "dependencies": {
-    "discord.js": "^12.2.0",
-    "express": "^4.17.1",
-    "node": "^16.1.0"
+    "start-bot": "yarn workspace bot start",
+    "start-website": "yarn workspace website start"
   }
 }

@@ -1,0 +1,15 @@
+{
+  "name": "bot",
+  "version": "1.0.0",
+  "description": "Discord bot to randomly select a drop location for Warzone",
+  "main": "src/index.js",
+  "author": "Gaston Aganza",
+  "scripts": {
+    "start": "yarn node src/index.js"
+  },
+  "dependencies": {
+    "discord.js": "^12.2.0",
+    "express": "^4.17.1",
+    "node": "^16.1.0"
+  }
+}

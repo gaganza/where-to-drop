@@ -1,0 +1,8 @@
+{
+  "name": "@where-to-drop/shared",
+  "version": "1.0.0",
+  "description": "Shared code for the Where To Drop bot & website",
+  "main": "constants.js",
+  "author": "Gaston Aganza",
+  "license": "ISC"
+}
