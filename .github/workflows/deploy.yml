@@ -61,9 +61,9 @@ jobs:
           yarn
           yarn workspace client build
       - name: Deploy 🚀
-              uses: JamesIves/github-pages-deploy-action@v4.3.3
-              with:
-                branch: gh-pages 
-                folder: packages/client/build
-                git-config-name: "Gaston Aganza"
-                git-config-email: gaston.aganza@gmail.com
+        uses: JamesIves/github-pages-deploy-action@v4.3.3
+        with:
+          branch: gh-pages
+          folder: packages/client/build
+          git-config-name: 'Gaston Aganza'
+          git-config-email: gaston.aganza@gmail.com
