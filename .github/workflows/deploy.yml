@@ -65,5 +65,5 @@ jobs:
         with:
           branch: gh-pages
           folder: packages/client/build
-          git-config-name: 'Gaston Aganza'
-          git-config-email: gaston.aganza@gmail.com
+          git-config-name: ${{ secrets._GITHUB_NAME }}
+          git-config-email: ${{ secrets._GITHUB_EMAIL }}
