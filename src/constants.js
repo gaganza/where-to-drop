@@ -30,4 +30,18 @@ module.exports = {
     'Prison Block',
     'Stronghold',
   ],
+  REBIRTH_ISLAND_LOCATIONS: [
+    'Bay',
+    'Camp',
+    'Gatehouse',
+    'Graveyard',
+    'Grotto',
+    'Keep',
+    'Lighthouse',
+    'Overlook',
+    'Smuggler’s Cove',
+    'Terraces',
+    'Town',
+    'Winery',
+  ],  
 };
