@@ -44,6 +44,11 @@ client.on('ready', () => {
 });
 
 client.on('message', (message) => {
+  // ignore everyone mentions
+  if (message.content.match(Discord.MessageMentions.EVERYONE_PATTERN) !== null) {
+    return;
+  }
+
   if (message.content.substring(0, 1) == '!') {
     message.reply(getHelpMessage());
   }
