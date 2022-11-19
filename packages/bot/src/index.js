@@ -25,6 +25,8 @@ function getAllLocations(map) {
 function getHelpMessage() {
   return `
     usage: @Where to Drop - Warzone [OPTION]
+      a, Al Mazrah - for a location in the Al Mazrah map
+      
       c, caldera - for a location in the Caldera map
 
       r, rebirth - for a location in the Rebirth Island map
@@ -57,6 +59,11 @@ client.on('message', (message) => {
     const [_mention, cmd] = message.content.split(' ');
 
     switch (cmd) {
+      case 'a':
+      case 'al mazrah':
+        message.reply(getRandomLocation(ALMAZRAH_LOCATIONS));
+        break;
+        
       case 'c':
       case 'caldera':
         message.reply(getRandomLocation(CALDERA_LOCATIONS));
@@ -74,6 +81,7 @@ client.on('message', (message) => {
 
       case 'l':
       case 'list':
+        const almazrahLocations = getAllLocations(ALMAZRAH_LOCATIONS).join(', ');
         const calderaLocations = getAllLocations(CALDERA_LOCATIONS).join(', ');
         const rebirthLocations = getAllLocations(REBIRTH_ISLAND_LOCATIONS).join(', ');
         const fortunesKeepLocations = getAllLocations(FORTUNES_KEEP_LOCATIONS).join(', ');
