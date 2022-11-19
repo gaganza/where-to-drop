@@ -1,6 +1,11 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
-const { CALDERA_LOCATIONS, REBIRTH_ISLAND_LOCATIONS, FORTUNES_KEEP_LOCATIONS } = require('@where-to-drop/shared');
+const {
+  ALMAZRAH_LOCATIONS, 
+  CALDERA_LOCATIONS, 
+  FORTUNES_KEEP_LOCATIONS,
+  REBIRTH_ISLAND_LOCATIONS,
+} = require('@where-to-drop/shared');
 
 let auth;
 
@@ -25,6 +30,8 @@ function getAllLocations(map) {
 function getHelpMessage() {
   return `
     usage: @Where to Drop - Warzone [OPTION]
+      a, al-marzah - for a location in the Al Marzah map
+      
       c, caldera - for a location in the Caldera map
 
       r, rebirth - for a location in the Rebirth Island map
@@ -57,6 +64,11 @@ client.on('message', (message) => {
     const [_mention, cmd] = message.content.split(' ');
 
     switch (cmd) {
+      case 'a':
+      case 'al-mazrah':
+        message.reply(getRandomLocation(ALMAZRAH_LOCATIONS));
+        break;
+
       case 'c':
       case 'caldera':
         message.reply(getRandomLocation(CALDERA_LOCATIONS));
@@ -74,12 +86,14 @@ client.on('message', (message) => {
 
       case 'l':
       case 'list':
+        const almazrah = getAllLocations(ALMAZRAH_LOCATIONS).join(', ');
         const calderaLocations = getAllLocations(CALDERA_LOCATIONS).join(', ');
         const rebirthLocations = getAllLocations(REBIRTH_ISLAND_LOCATIONS).join(', ');
         const fortunesKeepLocations = getAllLocations(FORTUNES_KEEP_LOCATIONS).join(', ');
 
         message.reply(
           `
+          Al Mazrah locations: ${almazrah}
           Caldera locations: ${calderaLocations}
           Rebirth Island locations: ${rebirthLocations}
           Fortune's Keep locations: ${fortunesKeepLocations}
