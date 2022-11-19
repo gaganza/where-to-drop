@@ -4,7 +4,7 @@ const {
   ALMAZRAH_LOCATIONS, 
   CALDERA_LOCATIONS, 
   FORTUNES_KEEP_LOCATIONS,
-  REBIRTH_ISLAND_LOCATIONS
+  REBIRTH_ISLAND_LOCATIONS,
 } = require('@where-to-drop/shared');
 
 let auth;
@@ -31,6 +31,7 @@ function getHelpMessage() {
   return `
     usage: @Where to Drop - Warzone [OPTION]
       a, al-marzah - for a location in the Al Marzah map
+      
       c, caldera - for a location in the Caldera map
 
       r, rebirth - for a location in the Rebirth Island map
