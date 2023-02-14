@@ -18,6 +18,15 @@ module.exports = {
     'Zarqwa Hydroelectric',
     'Zaya Observatory',
   ],
+  ASHIKA_LOCATIONS: [
+    'Beach Club',
+    'Ōganikku Farms',
+    'Port Ashika',
+    'Residential',
+    'Shipwreck',
+    'Town Center',
+    'Tsuki center'
+  ],
   CALDERA_LOCATIONS: [
     'Airfield',
     'Arsenal',
