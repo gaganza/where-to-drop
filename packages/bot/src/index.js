@@ -2,6 +2,7 @@ const Discord = require('discord.js');
 const client = new Discord.Client();
 const {
   ALMAZRAH_LOCATIONS, 
+  ASHIKA_LOCATIONS,
   CALDERA_LOCATIONS, 
   FORTUNES_KEEP_LOCATIONS,
   REBIRTH_ISLAND_LOCATIONS,
@@ -37,6 +38,8 @@ function getHelpMessage() {
       r, rebirth - for a location in the Rebirth Island map
 
       f, fortunes-keep - for a location in the Fortune's Keep map
+      
+      s, ashika - for a location in the Ashkia Island map
       
       l, list - list out all the locations for all maps
       
@@ -83,17 +86,24 @@ client.on('message', (message) => {
       case 'fortunes-keep':
         message.reply(getRandomLocation(FORTUNES_KEEP_LOCATIONS));
         break;
+        
+      case 's':
+      case 'ashika-island':
+        message.reply(getRandomLocation(FORTUNES_KEEP_LOCATIONS));
+        break;
 
       case 'l':
       case 'list':
         const almazrah = getAllLocations(ALMAZRAH_LOCATIONS).join(', ');
+        const ashikaLocations = getAllLocations(ASHIKA_LOCATIONS).join(', ');
         const calderaLocations = getAllLocations(CALDERA_LOCATIONS).join(', ');
         const rebirthLocations = getAllLocations(REBIRTH_ISLAND_LOCATIONS).join(', ');
         const fortunesKeepLocations = getAllLocations(FORTUNES_KEEP_LOCATIONS).join(', ');
-
+        
         message.reply(
           `
           Al Mazrah locations: ${almazrah}
+          Ashika locations: ${askhialocations}
           Caldera locations: ${calderaLocations}
           Rebirth Island locations: ${rebirthLocations}
           Fortune's Keep locations: ${fortunesKeepLocations}
