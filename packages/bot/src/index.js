@@ -95,7 +95,7 @@ client.on('message', (message) => {
       case 'l':
       case 'list':
         const almazrah = getAllLocations(ALMAZRAH_LOCATIONS).join(', ');
-        const ashikaLocations = getAllLocations(ASHIKA_LOCATIONS).join(', ');
+        const ashikaLocations = getAllLocations(ASHIKA_ISLAND_LOCATIONS).join(', ');
         const calderaLocations = getAllLocations(CALDERA_LOCATIONS).join(', ');
         const rebirthLocations = getAllLocations(REBIRTH_ISLAND_LOCATIONS).join(', ');
         const fortunesKeepLocations = getAllLocations(FORTUNES_KEEP_LOCATIONS).join(', ');
