@@ -50,6 +50,34 @@ Simple script that runs on `!ping` or `!p` command that randomly selects a locat
 - Town
 - Winery
 
+## List of Available Drop Locations (Al Mazrah)
+- Ahkdar Village, 
+- Al Bagra Fortress,
+- Al Malik Airport,
+- Al Mazrah City,
+- Al Safwa Quarry,
+- Al Samman Cemetery,
+- Al Sharim Pass
+- Hafid Port,
+- Mawizeh Marshlands,
+- Rohan Oil,
+- Sa’id City,
+- Sarrif Bay,
+- Sattiq Cave Complex,
+- Sawah Village,
+- Taraq Village,
+- Zarqwa Hydroelectric,
+- Zaya Observatory
+
+## List of Available Drop Locations (Ashika)
+- Beach Club
+- Ōganikku Farms
+- Port Ashika
+- Residential
+- Shipwreck
+- Town Center
+- Tsuki center
+
 ## Download
 
 [Link to add bot to your discord server.](https://discordapp.com/oauth2/authorize?client_id=704184701115695165&scope=bot&permissions=5120)
