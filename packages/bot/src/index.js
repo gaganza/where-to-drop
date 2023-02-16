@@ -95,7 +95,7 @@ client.on('message', (message) => {
       case 'l':
       case 'list':
         const almazrah = getAllLocations(ALMAZRAH_LOCATIONS).join(', ');
-        const ashikaLocations = getAllLocations(ASHIKA_ISLAND_LOCATIONS).join(', ');
+        const ashikaIslandLocations = getAllLocations(ASHIKA_ISLAND_LOCATIONS).join(', ');
         const calderaLocations = getAllLocations(CALDERA_LOCATIONS).join(', ');
         const rebirthLocations = getAllLocations(REBIRTH_ISLAND_LOCATIONS).join(', ');
         const fortunesKeepLocations = getAllLocations(FORTUNES_KEEP_LOCATIONS).join(', ');
@@ -103,7 +103,7 @@ client.on('message', (message) => {
         message.reply(
           `
           Al Mazrah locations: ${almazrah}
-          Ashika locations: ${askhialocations}
+          Ashika locations: ${ashikaIslandLocations}
           Caldera locations: ${calderaLocations}
           Rebirth Island locations: ${rebirthLocations}
           Fortune's Keep locations: ${fortunesKeepLocations}
