@@ -25,7 +25,7 @@ module.exports = {
     'Residential',
     'Shipwreck',
     'Town Center',
-    'Tsuki center'
+    'Tsuki Castle'
   ],
   CALDERA_LOCATIONS: [
     'Airfield',
