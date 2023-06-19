@@ -6,6 +6,7 @@ const {
   CALDERA_LOCATIONS, 
   FORTUNES_KEEP_LOCATIONS,
   REBIRTH_ISLAND_LOCATIONS,
+  VONDEL_LOCATIONS,
 } = require('@where-to-drop/shared');
 
 let auth;
@@ -40,6 +41,8 @@ function getHelpMessage() {
       f, fortunes-keep - for a location in the Fortune's Keep map
       
       ai, ashika-island - for a location in the Ashkia Island map
+
+      v, vondel - for a location in the Vondel map
       
       l, list - list out all the locations for all maps
       
@@ -92,6 +95,11 @@ client.on('message', (message) => {
         message.reply(getRandomLocation(ASHIKA_ISLAND_LOCATIONS));
         break;
 
+      case 'v':
+      case 'vondel':
+        message.reply(getRandomLocation(VONDEL_LOCATIONS));
+        break;
+
       case 'l':
       case 'list':
         const almazrah = getAllLocations(ALMAZRAH_LOCATIONS).join(', ');
@@ -99,6 +107,7 @@ client.on('message', (message) => {
         const calderaLocations = getAllLocations(CALDERA_LOCATIONS).join(', ');
         const rebirthLocations = getAllLocations(REBIRTH_ISLAND_LOCATIONS).join(', ');
         const fortunesKeepLocations = getAllLocations(FORTUNES_KEEP_LOCATIONS).join(', ');
+        const vondelLocations = getAllLocations(VONDEL_LOCATIONS).join(', ');
         
         message.reply(
           `
@@ -107,6 +116,7 @@ client.on('message', (message) => {
           Caldera locations: ${calderaLocations}
           Rebirth Island locations: ${rebirthLocations}
           Fortune's Keep locations: ${fortunesKeepLocations}
+          Vondel locations: ${vondelLocations}
           `,
         );
         break;
