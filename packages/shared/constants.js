@@ -73,4 +73,21 @@ module.exports = {
     'Town',
     'Winery',
   ],
+  VONDEL_LOCATIONS: [
+    'Castle',
+    'Central Station',
+    'City',
+    'City Hall',
+    'Cruise Terminal',
+    'Exhibit',
+    'Fire Department',
+    'Floating District',
+    'Police Station',
+    'Mall',
+    'Market',
+    'Museum',
+    'Stadium',
+    'University',
+    'Zoo',
+  ]  
 };
