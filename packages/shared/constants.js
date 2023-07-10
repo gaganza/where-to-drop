@@ -76,12 +76,12 @@ module.exports = {
   VONDEL_LOCATIONS: [
     'Castle',
     'Central Station',
-    'City',
     'City Hall',
     'Cruise Terminal',
     'Exhibit',
     'Fire Department',
     'Floating District',
+    'Graveyard',
     'Police Station',
     'Mall',
     'Market',
