@@ -89,5 +89,18 @@ module.exports = {
     'Stadium',
     'University',
     'Zoo',
-  ]  
+  ],
+  URZIKSTAN_LOCATIONS: [
+    'Hadiqa Farms',
+    'Levin Resort',
+    'Low Town',
+    'Old Town',
+    'Orlov Military Base',
+    'Popov Power',
+    'Seaport District',
+    'Shahin Manor',
+    'Urzikstan Cargo',
+    'Zaravan City',
+    'Zaravan Suburbs',
+  ],
 };
