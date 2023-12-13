@@ -78,6 +78,19 @@ Simple script that runs on `!ping` or `!p` command that randomly selects a locat
 - Town Center
 - Tsuki center
 
+## List of Available Drop Locations (Urzikstan)
+- Hadiqa Farms
+- Levin Resort
+- Low Town
+- Old Town
+- Orlov Military Base
+- Popov Power
+- Seaport District
+- Shahin Manor
+- Urzikstan Cargo
+- Zaravan City
+- Zaravan Suburbs
+
 ## Download
 
 [Link to add bot to your discord server.](https://discordapp.com/oauth2/authorize?client_id=704184701115695165&scope=bot&permissions=5120)
