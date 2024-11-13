@@ -91,6 +91,18 @@ Simple script that runs on `!ping` or `!p` command that randomly selects a locat
 - Zaravan City
 - Zaravan Suburbs
 
+## List of Available Drop Locations (Area 99)
+- Bunker
+- Cooling Towers
+- Loading Bay
+- Mannequin Assembly
+- Manufacturing
+- Nuketown Shipping
+- Pods
+- Reactor
+- Test Site
+- Warehouse
+
 ## Download
 
 [Link to add bot to your discord server.](https://discordapp.com/oauth2/authorize?client_id=704184701115695165&scope=bot&permissions=5120)
