@@ -8,6 +8,7 @@ const {
   REBIRTH_ISLAND_LOCATIONS,
   URZIKSTAN_LOCATIONS,
   VONDEL_LOCATIONS,
+  AREA_99,
 } = require('@where-to-drop/shared');
 
 let auth;
@@ -33,6 +34,8 @@ function getAllLocations(map) {
 function getHelpMessage() {
   return `
     usage: @Where to Drop - Warzone [OPTION]
+      9, area-99 - for a location in the Area 99 map
+
       a, al-marzah - for a location in the Al Marzah map
       
       c, caldera - for a location in the Caldera map
@@ -73,6 +76,10 @@ client.on('message', (message) => {
     const [_mention, cmd] = message.content.split(' ');
 
     switch (cmd) {
+      case '9':
+      case 'area-99':
+        message.reply(getRandomLocation(AREA_99));
+        break;
       case 'a':
       case 'al-mazrah':
         message.reply(getRandomLocation(ALMAZRAH_LOCATIONS));

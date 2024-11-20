@@ -18,6 +18,18 @@ module.exports = {
     'Zarqwa Hydroelectric',
     'Zaya Observatory',
   ],
+  AREA_99: [
+    'Bunker',
+    'Cooling Towers',
+    'Loading Bay',
+    'Mannequin Assembly',
+    'Manufacturing',
+    'Nuketown Shipping',
+    'Pods',
+    'Reactor',
+    'Test Site',
+    'Warehouse',
+  ],
   ASHIKA_ISLAND_LOCATIONS: [
     'Beach Club',
     'Ōganikku Farms',
