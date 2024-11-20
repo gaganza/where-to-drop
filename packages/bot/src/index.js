@@ -77,6 +77,7 @@ client.on('message', (message) => {
 
     switch (cmd) {
       case '9':
+      case 'area-99':
         message.reply(getRandomLocation(AREA_99));
         break;
       case 'a':
