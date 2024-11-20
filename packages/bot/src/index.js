@@ -8,7 +8,7 @@ const {
   REBIRTH_ISLAND_LOCATIONS,
   URZIKSTAN_LOCATIONS,
   VONDEL_LOCATIONS,
-  AREA_99
+  AREA_99,
 } = require('@where-to-drop/shared');
 
 let auth;
