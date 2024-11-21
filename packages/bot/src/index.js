@@ -124,6 +124,7 @@ client.on('message', (message) => {
         const fortunesKeepLocations = getAllLocations(FORTUNES_KEEP_LOCATIONS).join(', ');
         const urzikstanLocations = getAllLocations(URZIKSTAN_LOCATIONS).join(', ');
         const vondelLocations = getAllLocations(VONDEL_LOCATIONS).join(', ');
+        const area99Locations = getAllLocations(AREA_99).join(', ');
         
         message.reply(
           `
@@ -134,6 +135,7 @@ client.on('message', (message) => {
           Fortune's Keep locations: ${fortunesKeepLocations}
           Urzikstan locations: ${urzikstanLocations}
           Vondel locations: ${vondelLocations}
+          Area 99 locations: ${area99Locations}
           `,
         );
         break;
