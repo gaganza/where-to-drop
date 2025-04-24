@@ -7,6 +7,7 @@ const {
   FORTUNES_KEEP_LOCATIONS,
   REBIRTH_ISLAND_LOCATIONS,
   URZIKSTAN_LOCATIONS,
+  VERDANSK_LOCATIONS,
   VONDEL_LOCATIONS,
   AREA_99,
 } = require('@where-to-drop/shared');
@@ -49,6 +50,8 @@ function getHelpMessage() {
       u, urzikstan - for a location in the Urzikstan map
 
       v, vondel - for a location in the Vondel map
+
+      vk, verdansk - for a location in the Verdansk map
       
       l, list - list out all the locations for all maps
       
@@ -115,6 +118,11 @@ client.on('message', (message) => {
         message.reply(getRandomLocation(VONDEL_LOCATIONS));
         break;
 
+      case 'vk':
+      case 'verdansk':
+        message.reply(getRandomLocation(VERDANSK_LOCATIONS));
+        break;
+
       case 'l':
       case 'list':
         const almazrah = getAllLocations(ALMAZRAH_LOCATIONS).join(', ');
@@ -124,6 +132,7 @@ client.on('message', (message) => {
         const fortunesKeepLocations = getAllLocations(FORTUNES_KEEP_LOCATIONS).join(', ');
         const urzikstanLocations = getAllLocations(URZIKSTAN_LOCATIONS).join(', ');
         const vondelLocations = getAllLocations(VONDEL_LOCATIONS).join(', ');
+        const verdanskLocations = getAllLocations(VERDANSK_LOCATIONS).join(',');
         const area99Locations = getAllLocations(AREA_99).join(', ');
         
         message.reply(
@@ -135,6 +144,7 @@ client.on('message', (message) => {
           Fortune's Keep locations: ${fortunesKeepLocations}
           Urzikstan locations: ${urzikstanLocations}
           Vondel locations: ${vondelLocations}
+          Verdansk locations: ${verdanskLocations
           Area 99 locations: ${area99Locations}
           `,
         );

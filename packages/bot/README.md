@@ -5,21 +5,25 @@ www.where-to-drop.com
 Simple script that runs on `!ping` or `!p` command that randomly selects a location to drop in Call of Duty - Warzone. Now supports `!r` or `!rebirth` to select a location from Rebirth Island.
 
 ## List of Available Drop Locations (Verdansk)
-- Airfield
-- Arsenal
-- Beachhead
-- Capital
-- Docks
+- Airport
+- Boneyard
+- Dam
+- Downtown
 - Easter Egg: Just insta drop
-- Fields
-- Lagoon
-- Mines
-- Peak
-- Power plant
-- Resort
-- Runway
-- Sub pen
-- Village
+- Farmland
+- Hills
+- Hospital
+- Lumber
+- Park
+- Port
+- Prison
+- Promenade
+- Quarry
+- Stadium 
+- Storage Town
+- Superstore
+- TV Station
+- Train Station
 
 ## List of Available Drop Locations (Rebirth Island)
 
